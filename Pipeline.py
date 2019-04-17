@@ -7,14 +7,14 @@ import numpy as np
 
 #Function to Get Data by Entity
 def GetData(param,s):
-    ent_url = r'http://avenue-api.7parkdata.com/v4/data/?'+param+r'&respformat=flat'
+    ent_url = r'URL'+param+r'OUTPUT FORMAT'
     resp = s.get(ent_url, headers = headers).json()
     resp1 = resp['data']
     return resp1
 
 print("Starting...")
-params_url = r'http://avenue-api.7parkdata.com/v4/queries/?entity_id=46399&respformat=urlencode'
-headers = {'authorization': 'Token 3dfae7c6fd3edc20043e9300f1c502f1d1a1d32b'}
+params_url = r'URL'
+headers = {'authorization': 'Token '}
 
 print("Calling Get Query Params By Entity")
 response = requests.get(params_url, headers = headers)
